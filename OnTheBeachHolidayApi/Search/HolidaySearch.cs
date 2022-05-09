@@ -1,6 +1,7 @@
 ﻿using OnTheBeach.HolidaySearch.Api.Models;
 using OnTheBeach.HolidaySearch.Data;
 using OnTheBeach.HolidaySearch.Data.Models;
+using System.Linq;
 
 namespace OnTheBeach.HolidaySearch.Api
 {
@@ -26,9 +27,6 @@ namespace OnTheBeach.HolidaySearch.Api
         {
             return new HolidayResult
             {
-                //
-                // This should really combine the lists to return multiple results based on destination, I will come back and do that.
-                //
                 Flight = _flightSearch.Search(_holidayCriteria).FirstOrDefault(),
                 Hotel = _hotelSearch.Search(_holidayCriteria).FirstOrDefault()
             };

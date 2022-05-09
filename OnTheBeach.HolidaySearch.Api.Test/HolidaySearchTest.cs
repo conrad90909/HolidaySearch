@@ -33,7 +33,7 @@ namespace OnTheBeach.HolidaySearch.Api.Test
 
         [Fact]
         public void Customer2_TestHolidaySearchWorks()
-        { 
+        {
             var holidayCriteria = new HolidayCriteria
             {
                 DepartingFrom = "ANY LON",
@@ -73,6 +73,28 @@ namespace OnTheBeach.HolidaySearch.Api.Test
 
             Assert.Equal(7, result.Flight.Id);
             Assert.Equal(6, result.Hotel.Id);
+        }
+
+        [Fact]
+        public void NoResults_TestHolidaySearchReturnsNoResults()
+        {
+            var holidayCriteria = new HolidayCriteria
+            {
+                DepartingFrom = "BAD",
+                TravellingTo = "TST",
+                DepartureDate = DateTime.Parse("2001-01-01"),
+                Duration = 0
+            };
+
+            var flightData = new Data<Flight>();
+            var hotelData = new Data<Hotel>();
+
+            var holidaySearch = new HolidaySearch(holidayCriteria, flightData, hotelData);
+
+            var result = holidaySearch.Search();
+
+            Assert.Equal(null, result.Flight);
+            Assert.Equal(null, result.Hotel); 
         }
     }
 }
