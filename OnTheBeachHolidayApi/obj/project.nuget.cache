@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Du1a/4w51IYdGmie5vFi0w498WUbEqPGVWKIG3nBR8+TV7oii33SbKB5v28e2XGuj9w4GahcSo7LO5nI6XMx/w==",
+  "dgSpecHash": "nsE3x8dp2xRjfxAeXTyRHGBxSXSIDDeo+LUz56JpszQwZSw3dvmuiLuPigBfBlk91maYK/dihqLRz2fCaTTBEQ==",
   "success": true,
-  "projectFilePath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayApi\\OnTheBeach.HolidaySearch.Api.csproj",
+  "projectFilePath": "D:\\Source\\HolidaySearch\\OnTheBeachHolidayApi\\OnTheBeach.HolidaySearch.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radde\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\radde\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

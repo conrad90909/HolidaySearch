@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cprYNcX/ixoMWes80+Zu1Uz6C+7rVM2utOt8u+JpWZjxAi5dkJPF/dw9G+/xeZdVp5ZsnZbwsNf3SpLG32Wtgw==",
+  "dgSpecHash": "4T2aJMA2mnsNH0kPF0iYLFdiVtWEhbPwiSSpoQ21RMT+RM8c6/cSlK2ym/wxNA9l6M9GCtd6Ya1sT3tb9GU/Rw==",
   "success": true,
-  "projectFilePath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeach.HolidaySearch.Api.Test\\OnTheBeach.HolidaySearch.Api.Test.csproj",
+  "projectFilePath": "D:\\Source\\HolidaySearch\\OnTheBeach.HolidaySearch.Api.Test\\OnTheBeach.HolidaySearch.Api.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radde\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\radde\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

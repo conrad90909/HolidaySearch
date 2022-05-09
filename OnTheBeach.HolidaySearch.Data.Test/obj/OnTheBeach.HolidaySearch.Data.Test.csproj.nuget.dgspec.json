@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source\\OnTheBeachHoliday\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj": {}
+    "D:\\Source\\HolidaySearch\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj": {}
   },
   "projects": {
-    "D:\\Source\\OnTheBeachHoliday\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj": {
+    "D:\\Source\\HolidaySearch\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\OnTheBeachHoliday\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj",
+        "projectUniqueName": "D:\\Source\\HolidaySearch\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj",
         "projectName": "OnTheBeach.HolidaySearch.Data.Test",
-        "projectPath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj",
+        "projectPath": "D:\\Source\\HolidaySearch\\OnTheBeach.HolidaySearch.Data.Test\\OnTheBeach.HolidaySearch.Data.Test.csproj",
         "packagesPath": "C:\\Users\\radde\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeach.HolidaySearch.Data.Test\\obj\\",
+        "outputPath": "D:\\Source\\HolidaySearch\\OnTheBeach.HolidaySearch.Data.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj": {
-                "projectPath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj"
+              "D:\\Source\\HolidaySearch\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj": {
+                "projectPath": "D:\\Source\\HolidaySearch\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj": {
+    "D:\\Source\\HolidaySearch\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj",
+        "projectUniqueName": "D:\\Source\\HolidaySearch\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj",
         "projectName": "OnTheBeach.HolidaySearch.Data",
-        "projectPath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj",
+        "projectPath": "D:\\Source\\HolidaySearch\\OnTheBeachHolidayData\\OnTheBeach.HolidaySearch.Data.csproj",
         "packagesPath": "C:\\Users\\radde\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\OnTheBeachHoliday\\OnTheBeachHolidayData\\obj\\",
+        "outputPath": "D:\\Source\\HolidaySearch\\OnTheBeachHolidayData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
