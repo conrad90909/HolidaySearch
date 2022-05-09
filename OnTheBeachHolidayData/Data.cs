@@ -7,15 +7,12 @@ namespace OnTheBeachHolidayData
 {
     public class Data<T>
     {
-
         public IList<T> GetData()
         {
-            var field = typeof(T).GetField("FileName");
-            var fileName = field.GetValue("");
+            var fileName = (string)typeof(T).GetField("FileName").GetValue("");
 
             var file = File.ReadAllText(@"Data/" + fileName);
             return JsonConvert.DeserializeObject<List<T>>(file);
         }
-        
     }
 }
