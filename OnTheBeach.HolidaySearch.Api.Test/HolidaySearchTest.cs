@@ -7,10 +7,10 @@ using System.Linq;
 
 namespace OnTheBeach.HolidaySearch.Api.Test
 {
-    public class FlightSearchTests
+    public class HolidaySearchTests
     {
         [Fact]
-        public void Customer1_TestFlightSearchWorks()
+        public void Customer1_TestHolidaySearchWorks()
         {
             /*
              * Departing from: Manchester Airport (MAN)
@@ -19,13 +19,10 @@ namespace OnTheBeach.HolidaySearch.Api.Test
                 Duration: 7 nights
 
                 Flight 2
+                Hotel 9
              */
 
-            var flightData = new Data<Flight>();
-
-            var flighSearch = new FlightSearch(flightData);
-
-            var flightCriteria = new HolidayCriteria
+            var holidayCriteria = new HolidayCriteria
             {
                 DepartingFrom = "MAN",
                 TravellingTo = "AGP",
@@ -33,13 +30,19 @@ namespace OnTheBeach.HolidaySearch.Api.Test
                 Duration = 7
             };
 
-            var result = flighSearch.Search(flightCriteria);
+            var flightData = new Data<Flight>();
+            var hotelData = new Data<Hotel>();
 
-            Assert.Equal(2, result.FirstOrDefault().Id);
+            var holidaySearch = new HolidaySearch(holidayCriteria, flightData, hotelData);
+
+            var result = holidaySearch.Search();
+
+            Assert.Equal(2, result.Flight.Id);
+            Assert.Equal(9, result.Hotel.Id);
         }
 
         [Fact]
-        public void Customer2_TestFlightSearchWorks()
+        public void Customer2_TestHolidaySearchWorks()
         {
             /*
              * Departing from: Manchester Airport (MAN)
@@ -48,13 +51,10 @@ namespace OnTheBeach.HolidaySearch.Api.Test
                 Duration: 7 nights
 
                 Flight 6
+                Hotel 5
              */
 
-            var flightData = new Data<Flight>();
-
-            var flighSearch = new FlightSearch(flightData);
-
-            var flightCriteria = new HolidayCriteria
+            var holidayCriteria = new HolidayCriteria
             {
                 DepartingFrom = "ANY LON",
                 TravellingTo = "PMI",
@@ -62,9 +62,15 @@ namespace OnTheBeach.HolidaySearch.Api.Test
                 Duration = 10
             };
 
-            var result = flighSearch.Search(flightCriteria);
+            var flightData = new Data<Flight>();
+            var hotelData = new Data<Hotel>();
 
-            Assert.Equal(6, result.FirstOrDefault().Id);
+            var holidaySearch = new HolidaySearch(holidayCriteria, flightData, hotelData);
+
+            var result = holidaySearch.Search();
+
+            Assert.Equal(6, result.Flight.Id);
+            Assert.Equal(5, result.Hotel.Id);
         }
     }
 }
