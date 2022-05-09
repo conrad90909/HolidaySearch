@@ -402,3 +402,6 @@ OnTheBeachHolidayData/bin
 OnTheBeachHolidayData/obj
 OnTheBeachHolidayApi/obj
 .vs/OnTheBeachHoliday/v17
+OnTheBeach.HolidaySearch.Data.Test/bin
+OnTheBeach.HolidaySearch.Data.Test/obj
+.vs/OnTheBeachHoliday/DesignTimeBuild

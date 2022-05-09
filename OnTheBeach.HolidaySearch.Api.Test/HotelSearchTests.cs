@@ -7,10 +7,10 @@ using System.Linq;
 
 namespace OnTheBeach.HolidaySearch.Api.Test
 {
-    public class FlightSearchTests
+    public class HotelSearchTests
     {
         [Fact]
-        public void Customer1_TestFlightSearchWorks()
+        public void Customer1_TestHotelSearchWorks()
         {
             /*
              * Departing from: Manchester Airport (MAN)
@@ -18,14 +18,14 @@ namespace OnTheBeach.HolidaySearch.Api.Test
                 Departure Date: 2023/07/01
                 Duration: 7 nights
 
-                Flight 2
+                Hotel 9
              */
 
-            var flightData = new Data<Flight>();
+            var hotelData = new Data<Hotel>();
 
-            var flighSearch = new FlightSearch(flightData);
+            var hotelSearch = new HotelSearch(hotelData);
 
-            var flightCriteria = new HolidayCriteria
+            var hotelCriteria = new HolidayCriteria
             {
                 DepartingFrom = "MAN",
                 TravellingTo = "AGP",
@@ -33,9 +33,9 @@ namespace OnTheBeach.HolidaySearch.Api.Test
                 Duration = 7
             };
 
-            var result = flighSearch.Search(flightCriteria);
+            var result = hotelSearch.Search(hotelCriteria);
 
-            Assert.Equal(2, result.FirstOrDefault().Id);
+            Assert.Equal(9, result.FirstOrDefault().Id);
         }
     }
 }
