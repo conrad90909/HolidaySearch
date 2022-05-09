@@ -10,16 +10,11 @@ namespace OnTheBeachHolidayData
 
         public IList<T> GetData()
         {
-            string fileName = "FlightData.json";
-
-            if (typeof(T) == typeof(Hotel)) 
-            {
-                fileName = "HotelData.json";
-            }
+            var field = typeof(T).GetField("FileName");
+            var fileName = field.GetValue("");
 
             var file = File.ReadAllText(@"Data/" + fileName);
             return JsonConvert.DeserializeObject<List<T>>(file);
-
         }
         
     }

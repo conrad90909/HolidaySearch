@@ -4,6 +4,8 @@ namespace OnTheBeach.HolidaySearch.Data.Models
 {
     public class Hotel
     {
+        public static string FileName = "HotelData.Json";
+
         [JsonProperty("id")]
         public int Id { get; set; }
 
