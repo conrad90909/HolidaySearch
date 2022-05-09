@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+OnTheBeach.HolidaySearch.Api.Test/obj
+OnTheBeachHolidayApi/bin
+OnTheBeachHolidayData/bin
+OnTheBeachHolidayData/obj
+OnTheBeachHolidayApi/obj
+.vs/OnTheBeachHoliday/v17

@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 using OnTheBeach.HolidaySearch.Data.Models;
 using System.Collections.Generic;
 
-namespace OnTheBeachHolidayData
+namespace OnTheBeach.HolidaySearch.Data
 {
     public class Data<T>
     {

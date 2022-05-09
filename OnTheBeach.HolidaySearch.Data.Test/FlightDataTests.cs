@@ -1,5 +1,5 @@
 using System;
-using OnTheBeachHolidayData;
+using OnTheBeach.HolidaySearch.Data;
 using OnTheBeach.HolidaySearch.Data.Models;
 using Xunit;
 using System.Linq;
