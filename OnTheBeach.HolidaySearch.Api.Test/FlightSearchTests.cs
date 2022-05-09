@@ -12,15 +12,6 @@ namespace OnTheBeach.HolidaySearch.Api.Test
         [Fact]
         public void Customer1_TestFlightSearchWorks()
         {
-            /*
-             * Departing from: Manchester Airport (MAN)
-                Traveling to: Malaga Airport (AGP)
-                Departure Date: 2023/07/01
-                Duration: 7 nights
-
-                Flight 2
-             */
-
             var flightData = new Data<Flight>();
 
             var flighSearch = new FlightSearch(flightData);
@@ -41,15 +32,6 @@ namespace OnTheBeach.HolidaySearch.Api.Test
         [Fact]
         public void Customer2_TestFlightSearchWorks()
         {
-            /*
-             * Departing from: Manchester Airport (MAN)
-                Traveling to: Malaga Airport (AGP)
-                Departure Date: 2023/07/01
-                Duration: 7 nights
-
-                Flight 6
-             */
-
             var flightData = new Data<Flight>();
 
             var flighSearch = new FlightSearch(flightData);

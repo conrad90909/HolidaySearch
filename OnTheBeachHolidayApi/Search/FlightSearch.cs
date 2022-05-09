@@ -29,7 +29,11 @@ namespace OnTheBeach.HolidaySearch.Api
 
         private bool CheckAirport(Flight flight, string DepartingFrom)
         {
-            if(DepartingFrom == "ANY LON")
+            if (DepartingFrom == "ANY")
+            {
+                return true;
+            }
+            else if (DepartingFrom == "ANY LON")
             {
                 return _londonAirports.Contains(flight.From);
             }

@@ -12,16 +12,6 @@ namespace OnTheBeach.HolidaySearch.Api.Test
         [Fact]
         public void Customer1_TestHolidaySearchWorks()
         {
-            /*
-             * Departing from: Manchester Airport (MAN)
-                Traveling to: Malaga Airport (AGP)
-                Departure Date: 2023/07/01
-                Duration: 7 nights
-
-                Flight 2
-                Hotel 9
-             */
-
             var holidayCriteria = new HolidayCriteria
             {
                 DepartingFrom = "MAN",
@@ -43,17 +33,7 @@ namespace OnTheBeach.HolidaySearch.Api.Test
 
         [Fact]
         public void Customer2_TestHolidaySearchWorks()
-        {
-            /*
-             * Departing from: Manchester Airport (MAN)
-                Traveling to: Malaga Airport (AGP)
-                Departure Date: 2023/07/01
-                Duration: 7 nights
-
-                Flight 6
-                Hotel 5
-             */
-
+        { 
             var holidayCriteria = new HolidayCriteria
             {
                 DepartingFrom = "ANY LON",
@@ -71,6 +51,28 @@ namespace OnTheBeach.HolidaySearch.Api.Test
 
             Assert.Equal(6, result.Flight.Id);
             Assert.Equal(5, result.Hotel.Id);
+        }
+
+        [Fact]
+        public void Customer3_TestHolidaySearchWorks()
+        {
+            var holidayCriteria = new HolidayCriteria
+            {
+                DepartingFrom = "ANY",
+                TravellingTo = "LPA",
+                DepartureDate = DateTime.Parse("2022-11-10"),
+                Duration = 14
+            };
+
+            var flightData = new Data<Flight>();
+            var hotelData = new Data<Hotel>();
+
+            var holidaySearch = new HolidaySearch(holidayCriteria, flightData, hotelData);
+
+            var result = holidaySearch.Search();
+
+            Assert.Equal(7, result.Flight.Id);
+            Assert.Equal(6, result.Hotel.Id);
         }
     }
 }

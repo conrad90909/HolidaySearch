@@ -12,15 +12,6 @@ namespace OnTheBeach.HolidaySearch.Api.Test
         [Fact]
         public void Customer1_TestHotelSearchWorks()
         {
-            /*
-             * Departing from: Manchester Airport (MAN)
-                Traveling to: Malaga Airport (AGP)
-                Departure Date: 2023/07/01
-                Duration: 7 nights
-
-                Hotel 9
-             */
-
             var hotelData = new Data<Hotel>();
 
             var hotelSearch = new HotelSearch(hotelData);
