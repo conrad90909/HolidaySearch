@@ -11,11 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnTheBeachHolidayData\OnTheBeach.HolidaySearch.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Search\" />
   </ItemGroup>
 
 </Project>

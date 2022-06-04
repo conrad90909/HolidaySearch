@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTheBeach.HolidaySearch.Api", "OnTheBeachHolidayApi\OnTheBeach.HolidaySearch.Api.csproj", "{E7E7B633-5FF1-495C-9C95-DC0EE08F7474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnTheBeach.HolidaySearch.Api", "OnTheBeachHolidayApi\OnTheBeach.HolidaySearch.Api.csproj", "{E7E7B633-5FF1-495C-9C95-DC0EE08F7474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTheBeach.HolidaySearch.Data", "OnTheBeachHolidayData\OnTheBeach.HolidaySearch.Data.csproj", "{69F5851B-A305-4902-91B0-3106E78488CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnTheBeach.HolidaySearch.Data.Test", "OnTheBeach.HolidaySearch.Data.Test\OnTheBeach.HolidaySearch.Data.Test.csproj", "{8134C65E-059B-4D3A-9556-70B450EA888F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTheBeach.HolidaySearch.Data.Test", "OnTheBeach.HolidaySearch.Data.Test\OnTheBeach.HolidaySearch.Data.Test.csproj", "{8134C65E-059B-4D3A-9556-70B450EA888F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnTheBeach.HolidaySearch.Api.Test", "OnTheBeach.HolidaySearch.Api.Test\OnTheBeach.HolidaySearch.Api.Test.csproj", "{7B333093-E82E-4ABB-9ACB-B295DB5E5E4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTheBeach.HolidaySearch.Api.Test", "OnTheBeach.HolidaySearch.Api.Test\OnTheBeach.HolidaySearch.Api.Test.csproj", "{7B333093-E82E-4ABB-9ACB-B295DB5E5E4A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1315BAA8-EB24-476A-9ECD-140D023C8BD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnTheBeach.HolidaySearch.Infrastructure", "OnTheBeachHolidayInfrastructure\OnTheBeach.HolidaySearch.Infrastructure.csproj", "{44D8AA7F-790B-43A0-BD8B-140591D7D8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTheBeach.HolidaySearch.Core", "OnTheBeach.HolidaySearch.Core\OnTheBeach.HolidaySearch.Core.csproj", "{E6264E56-CC88-4FAE-A288-DA1EC8EDA3A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +25,6 @@ Global
 		{E7E7B633-5FF1-495C-9C95-DC0EE08F7474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E7B633-5FF1-495C-9C95-DC0EE08F7474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E7B633-5FF1-495C-9C95-DC0EE08F7474}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69F5851B-A305-4902-91B0-3106E78488CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69F5851B-A305-4902-91B0-3106E78488CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69F5851B-A305-4902-91B0-3106E78488CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69F5851B-A305-4902-91B0-3106E78488CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8134C65E-059B-4D3A-9556-70B450EA888F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8134C65E-059B-4D3A-9556-70B450EA888F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8134C65E-059B-4D3A-9556-70B450EA888F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,9 +33,21 @@ Global
 		{7B333093-E82E-4ABB-9ACB-B295DB5E5E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B333093-E82E-4ABB-9ACB-B295DB5E5E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B333093-E82E-4ABB-9ACB-B295DB5E5E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44D8AA7F-790B-43A0-BD8B-140591D7D8B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44D8AA7F-790B-43A0-BD8B-140591D7D8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44D8AA7F-790B-43A0-BD8B-140591D7D8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44D8AA7F-790B-43A0-BD8B-140591D7D8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6264E56-CC88-4FAE-A288-DA1EC8EDA3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6264E56-CC88-4FAE-A288-DA1EC8EDA3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6264E56-CC88-4FAE-A288-DA1EC8EDA3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6264E56-CC88-4FAE-A288-DA1EC8EDA3A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8134C65E-059B-4D3A-9556-70B450EA888F} = {1315BAA8-EB24-476A-9ECD-140D023C8BD6}
+		{7B333093-E82E-4ABB-9ACB-B295DB5E5E4A} = {1315BAA8-EB24-476A-9ECD-140D023C8BD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91D601DE-42B7-42DE-8B6D-73E841F8BF6E}

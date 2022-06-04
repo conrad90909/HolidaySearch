@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnTheBeachHolidayApi\OnTheBeach.HolidaySearch.Api.csproj" />
-    <ProjectReference Include="..\OnTheBeachHolidayData\OnTheBeach.HolidaySearch.Data.csproj" />
   </ItemGroup>
 
 </Project>

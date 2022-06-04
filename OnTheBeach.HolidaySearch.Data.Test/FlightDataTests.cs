@@ -3,6 +3,7 @@ using OnTheBeach.HolidaySearch.Data;
 using OnTheBeach.HolidaySearch.Data.Models;
 using Xunit;
 using System.Linq;
+using OnTheBeach.HolidaySearch.Data.Core;
 
 namespace OnTheBeach.HolidaySearch.Data.Test
 {
@@ -22,7 +23,7 @@ namespace OnTheBeach.HolidaySearch.Data.Test
                 DepartureDate = DateTime.Parse("2023-07-01")
             };
 
-            var flightData = new Data<Flight>();
+            var flightData = new FlightSource();
             var data = flightData.GetData();
 
             Assert.Equal(firstObject.Id, data.FirstOrDefault().Id);

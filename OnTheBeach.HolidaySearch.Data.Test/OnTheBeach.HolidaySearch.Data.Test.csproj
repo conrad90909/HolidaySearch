@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OnTheBeachHolidayData\OnTheBeach.HolidaySearch.Data.csproj" />
-  </ItemGroup>
-
 </Project>
